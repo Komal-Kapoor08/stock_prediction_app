@@ -37,6 +37,13 @@ st.sidebar.write(f'predicted price for{select_date} is:{y_pred[0]}')
 #st.write('Stock Data')
 #st.write(stock_data)
 
-
+hide_menu = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
 
 
